@@ -31,7 +31,7 @@ class SdsApiClient(RouteLookupClient):
             "nhsMHSPartyKey": self._get_identifier_value(endpoint_resource, "https://fhir.nhs.uk/Id/nhsMhsPartyKey"),
             "nhsMhsCPAId": self._get_identifier_value(endpoint_resource, "https://fhir.nhs.uk/Id/nhsMhsCPAId"),
             "uniqueIdentifier": [
-                self._get_identifier_value(endpoint_resource, "https://fhir.nhs.uk/Id/nhsSpineASID")
+                self._get_identifier_value(endpoint_resource, "https://fhir.nhs.uk/Id/nhsMHSId")
             ]
         }
         return result
