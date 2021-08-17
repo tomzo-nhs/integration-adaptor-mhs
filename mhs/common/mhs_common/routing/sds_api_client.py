@@ -24,7 +24,7 @@ class SdsApiClient(RouteLookupClient):
         endpoint_resource = await self._get_endpoint_resource(interaction_id, ods_code)
 
         result = {
-            "nhsMhsFQDN": self._get_identifier_value(endpoint_resource, "https://fhir.nhs.uk/Id/nhsMhsFQDN"),
+            "nhsMhsFQDN": "https://msg.intspineservices.nhs.uk/reliablemessaging/reliablerequest",
             "nhsMHSEndPoint": [
                 endpoint_resource['address']
             ],
