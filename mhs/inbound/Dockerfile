@@ -11,6 +11,7 @@ COPY mhs/inbound/ /usr/src/app/mhs/inbound
 
 WORKDIR /usr/src/app/mhs/inbound
 
+RUN pipenv install "setuptools<58"
 RUN pipenv install --deploy --ignore-pipfile
 
 EXPOSE 443 80

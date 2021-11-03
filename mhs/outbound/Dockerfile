@@ -14,6 +14,7 @@ COPY mhs/outbound/ /usr/src/app/mhs/outbound
 
 WORKDIR /usr/src/app/mhs/outbound
 
+RUN pipenv install "setuptools<58"
 RUN pipenv install --deploy --ignore-pipfile
 
 EXPOSE 80
